@@ -1,0 +1,143 @@
+/* ---------- Navbar ---------- */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:rgba(15,23,42,.85);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    z-index:999;
+}
+
+/* ---------- Logo ---------- */
+
+.logo a{
+    text-decoration:none;
+    font-size:28px;
+    font-weight:700;
+}
+
+.logo-first,
+.logo-last {
+    display: inline-block;
+    color: #38bdf8;
+}
+
+/* ---------- Navigation ---------- */
+
+.nav-links{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#38bdf8;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+    position:relative;
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0%;
+
+    height:2px;
+
+    background:#38bdf8;
+
+    left:0;
+
+    bottom:-8px;
+
+    transition:.35s;
+}
+
+.nav-links a:hover{
+
+    color:#38bdf8;
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+}
+
+/* ---------- Resume Button ---------- */
+
+.resume-btn{
+
+    text-decoration:none;
+
+    padding:12px 28px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+    135deg,
+    #38bdf8,
+    #0ea5e9);
+
+    color:#38bdf8;
+
+    font-weight:600;
+
+    transition:.35s;
+}
+
+.resume-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(56,189,248,.35);
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:900px){
+
+.navbar{
+
+flex-direction:column;
+
+gap:20px;
+}
+
+.nav-links{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:20px;
+}
+
+.resume-btn{
+
+padding:10px 22px;
+}
+}
