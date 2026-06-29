@@ -1,0 +1,10 @@
+#contact a {
+    color: #38bdf8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #0ea5e9;
+    text-decoration: underline;
+}

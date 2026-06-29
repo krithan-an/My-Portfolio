@@ -21,7 +21,7 @@ function Navbar() {
       </nav>
 
       <a
-        href="/Resume/My_Resume.pdf"
+        href="/Resume/My Resume.pdf"
         className="resume-btn"
         target="_blank"
         rel="noopener noreferrer"
